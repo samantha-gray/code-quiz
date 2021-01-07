@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h2>This is Quiz App</h2>
+    <div>
+        <span>View HighScores</span>
+        <span class="time" id="time"> Time: 72</span>
+    </div>
+    <div id="start-screen">
+        <h2>Coding Quiz Challenge</h2>
+        <p>Try to answer the following code-related questions within the time limit, Keep in mind that incrrect answers will penalize your socre//time by ten</p>
+        <button type="button" onclick="starQuiz()">Start Quiz</button>
+    </div>
+    <div id="question-container">
+        <p id="question_title">Which water do you like?</p>
+        <div id="answer_list">
+            <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+        </div>
+        <div id="result-div">
+            <hr>
+            <p id="result">Correct</p>            
+        </div>
+    </div>
+
+    <!-- All done Page -->
+    <div id="all-done">
+        <h2>All done!</h2>
+        <p id="score">Your final score is 20</p>
+        <div>
+            <label>Enter names</label>
+            <input type="text" id="player">
+            <button type="button" onclick="onInputPlayer()">Submit</button>
+        </div>
+    </div>
+
+    <!-- Highsocre Page -->
+    <div id ="high-score">
+        <div id="player-list">
+            <ol>
+                <li>AB - 22</li>
+            </ol>
+        </div>
+        <div>
+            <button type="button" onclick="goBack()">Go Back</button>
+            <button type="button" onclick="clearHighscores()">Clear Highscores</button>
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+</html>
